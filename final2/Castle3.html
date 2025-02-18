@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Castles_V7</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castles with Exceptional Gardens in Scotland</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoders.css'type='text/css'/>
+</head>
+<body>
+  <div id="map"></div>
+  
+<div id="info-box">
+  <h3>Castles with Exceptional Gardens in Scotland</h3>
+  <p>The Historic Enviornment of Scotland designated 91 castles to the inventory of exceptional Gardens and Landscapes. 
+    
+   This map highlights the location of these castles and links to the protection website where you can read more!</p>
+</div>
+  
+ <div id="map-overlay">
+    
+    <div id="pd">
+      <p> Hover</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="tabs">
+          <button class="tab-btn active" onclick="openTab(event, 'locations')">Castle Names</button> 
+        </div>
+      </div>
+      
+      <!-- Locations Tab -->
+      <div id="locations" class="tab-content active">
+        <ul>
+          <button onclick="showPopup('Airlie Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00009\' target=\'_blank\'>Airlie Castle</a>', [-3.15505441, 56.65603453])">Airlie Castle</button>
+<button onclick="showPopup('Aldourie Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00011\' target=\'_blank\'>Aldourie Castle</a>', [-4.32515473, 57.40240886])">Aldourie Castle</button>
+<button onclick="showPopup('Ardross Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00023\' target=\'_blank\'>Historic Scotland</a>', [-4.32766061, 57.7332305])">Ardross Castle</button>
+<button onclick="showPopup('Armadale Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00028\' target=\'_blank\'>Historic Scotland</a>', [-5.89957247, 57.07266964])">Armadale Castle</button>
+<button onclick="showPopup('Ayton Castle', 'Authority: Scottish Borders<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00033\' target=\'_blank\'>Historic Scotland</a>', [-2.11256059, 55.84420346])">Ayton Castle</button>
+<button onclick="showPopup('Balfour Castle', 'Authority: Orkney Islands<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00038\' target=\'_blank\'>Historic Scotland</a>', [-2.9192718, 59.03404634])">Balfour Castle</button>
+
+<button onclick="showPopup('Balloch Castle', 'Authority: West Dunbartonshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00042\' target=\'_blank\'>Historic Scotland</a>', [-4.58402283, 56.0121766])">Balloch Castle</button>
+
+<button onclick="showPopup('Balmoral Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00045\' target=\'_blank\'>Historic Scotland</a>', [-3.23001895, 57.03370429])">Balmoral Castle</button>
+
+<button onclick="showPopup('Balnagown Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00046\' target=\'_blank\'>Historic Scotland</a>', [-4.08901542, 57.74874443])">Balnagown Castle</button>
+
+<button onclick="showPopup('Beaufort Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00052\' target=\'_blank\'>Historic Scotland</a>', [-4.49745203, 57.45035846])">Beaufort Castle</button>
+
+<button onclick="showPopup('Blair Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00059\' target=\'_blank\'>Historic Scotland</a>', [-3.86477283, 56.7747908])">Blair Castle</button>
+<button onclick="showPopup('Brechin Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00070\' target=\'_blank\'>Historic Scotland</a>', [-2.66629894, 56.72527089])">Brechin Castle</button>
+
+<button onclick="showPopup('Brodick Castle', 'Authority: North Ayrshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00071\' target=\'_blank\'>Historic Scotland</a>', [-5.15700814, 55.59750962])">Brodick Castle</button>
+
+<button onclick="showPopup('Brodie Castle', 'Authority: Moray<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00072\' target=\'_blank\'>Historic Scotland</a>', [-3.7097849, 57.59749512])">Brodie Castle</button>
+
+<button onclick="showPopup('Caprington Castle', 'Authority: East Ayrshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00084\' target=\'_blank\'>Historic Scotland</a>', [-4.52811254, 55.59264689])">Caprington Castle</button>
+
+<button onclick="showPopup('Cardross House', 'Authority: Stirling<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00086\' target=\'_blank\'>Historic Scotland</a>', [-4.24685793, 56.15155743])">Cardross House</button>
+
+<button onclick="showPopup('Castle Campbell', 'Authority: Clackmannanshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00089\' target=\'_blank\'>Historic Scotland</a>', [-3.67481627, 56.17395751])">Castle Campbell</button>
+  <button onclick="showPopup('Castle Forbes', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00090\' target=\'_blank\'>Historic Scotland</a>', [-2.629228, 57.2621846])">Castle Forbes</button>
+
+<button onclick="showPopup('Castle Fraser', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00091\' target=\'_blank\'>Historic Scotland</a>', [-2.45946899, 57.20506629])">Castle Fraser</button>
+
+<button onclick="showPopup('Castle Grant', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00092\' target=\'_blank\'>Historic Scotland</a>', [-3.59453485, 57.34884297])">Castle Grant</button>
+
+<button onclick="showPopup('Castle Kennedy', 'Authority: Dumfries and Galloway<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00093\' target=\'_blank\'>Historic Scotland</a>', [-4.95387687, 54.91837246])">Castle Kennedy</button>
+
+<button onclick="showPopup('Castle Leod', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00094\' target=\'_blank\'>Historic Scotland</a>', [-4.53456562, 57.59849097])">Castle Leod</button>
+
+<button onclick="showPopup('Castle Menzies', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00095\' target=\'_blank\'>Historic Scotland</a>', [-3.90272811, 56.62503925])">Castle Menzies</button>
+
+<button onclick="showPopup('Castle of Mey (Barrogill Castle)', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00096\' target=\'_blank\'>Historic Scotland</a>', [-3.22285162, 58.64688358])">Castle of Mey (Barrogill Castle)</button>
+
+<button onclick="showPopup('Castle Toward', 'Authority: Argyll and Bute<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00097\' target=\'_blank\'>Historic Scotland</a>', [-5.01213617, 55.87093832])">Castle Toward</button>
+
+<button onclick="showPopup('Cawdor Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00099\' target=\'_blank\'>Historic Scotland</a>', [-3.92418047, 57.51279972])">Cawdor Castle</button>
+<button onclick="showPopup('Cluny Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00103\' target=\'_blank\'>Historic Scotland</a>', [-2.51577097, 57.20262537])">Cluny Castle</button>
+
+<button onclick="showPopup('Cortachy Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00108\' target=\'_blank\'>Historic Scotland</a>', [-2.98526499, 56.72198681])">Cortachy Castle</button>
+
+<button onclick="showPopup('Craigievar Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00114\' target=\'_blank\'>Historic Scotland</a>', [54.00406221, 57.17468631])">Craigievar Castle</button>
+
+<button onclick="showPopup('Craigmillar Castle', 'Authority: Edinburgh<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00115\' target=\'_blank\'>Historic Scotland</a>', [-3.14398427, 55.92478686])">Craigmillar Castle</button>
+
+<button onclick="showPopup('Crathes Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00119\' target=\'_blank\'>Historic Scotland</a>', [-2.43669352, 57.06315681])">Crathes Castle</button>
+
+<button onclick="showPopup('Culzean Castle', 'Authority: South Ayrshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00124\' target=\'_blank\'>Historic Scotland</a>', [-4.78198963, 55.35216869])">Culzean Castle</button>
+
+<button onclick="showPopup('Dalcross Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00125\' target=\'_blank\'>Historic Scotland</a>', [-4.04017776, 57.50893989])">Dalcross Castle</button>
+
+<button onclick="showPopup('Darnaway Castle', 'Authority: Moray<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00133\' target=\'_blank\'>Historic Scotland</a>', [-3.68082437, 57.57524597])">Darnaway Castle</button>
+
+<button onclick="showPopup('Dirleton Castle', 'Authority: East Lothian<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00136\' target=\'_blank\'>Historic Scotland</a>', [-2.77901189, 56.04604135])">Dirleton Castle</button>
+
+<button onclick="showPopup('Drum Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00141\' target=\'_blank\'>Historic Scotland</a>', [-2.34095947, 57.09741052])">Drum Castle</button>
+
+<button onclick="showPopup('Drumlanrig Castle', 'Authority: Dumfries and Galloway<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00143\' target=\'_blank\'>Historic Scotland</a>', [-3.80450185, 55.28291829])">Drumlanrig Castle</button>
+
+<button onclick="showPopup('Drummond Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00144\' target=\'_blank\'>Historic Scotland</a>', [-3.85965196, 56.34566263])">Drummond Castle</button>
+
+<button onclick="showPopup('Dunbeath Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00150\' target=\'_blank\'>Historic Scotland</a>', [-3.43952245, 58.23763661])">Dunbeath Castle</button>
+
+<button onclick="showPopup('Dundas Castle', 'Authority: Edinburgh<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00151\' target=\'_blank\'>Historic Scotland</a>', [-3.41223909, 55.97553301])">Dundas Castle</button>
+
+<button onclick="showPopup('Dunimarle Castle', 'Authority: Fife<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00155\' target=\'_blank\'>Historic Scotland</a>', [-3.64862453, 56.06343567])">Dunimarle Castle</button>
+
+<button onclick="showPopup('Dunrobin Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00160\' target=\'_blank\'>Historic Scotland</a>', [-3.93758406, 57.98784493])">Dunrobin Castle</button>
+
+<button onclick="showPopup('Duntreath Castle', 'Authority: Stirling<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00162\' target=\'_blank\'>Historic Scotland</a>', [-4.34446098, 55.99855503])">Duntreath Castle</button>
+<button onclick="showPopup('Duntrune Castle', 'Authority: Argyll and Bute<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00163\' target=\'_blank\'>Historic Scotland</a>', [-5.54779773, 56.10503394])">Duntrune Castle</button>
+
+<button onclick="showPopup('Dunvegan Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00164\' target=\'_blank\'>Historic Scotland</a>', [-6.58813129, 57.44773955])">Dunvegan Castle</button>
+
+<button onclick="showPopup('Dupplin Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00165\' target=\'_blank\'>Historic Scotland</a>', [-3.52844674, 56.36216751])">Dupplin Castle</button>
+
+<button onclick="showPopup('Edzell Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00169\' target=\'_blank\'>Historic Scotland</a>', [-2.68125563, 56.8117907])">Edzell Castle</button>
+
+<button onclick="showPopup('Eglinton Castle', 'Authority: North Ayrshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00170\' target=\'_blank\'>Historic Scotland</a>', [-4.66590709, 55.64681392])">Eglinton Castle</button>
+
+<button onclick="showPopup('Fingask Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00179\' target=\'_blank\'>Historic Scotland</a>', [-3.24656926, 56.43376635])">Fingask Castle</button>
+
+<button onclick="showPopup('Floors Castle', 'Authority: Scottish Borders<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00181\' target=\'_blank\'>Historic Scotland</a>', [-2.46689856, 55.60260063])">Floors Castle</button>
+
+<button onclick="showPopup('Fordell Castle', 'Authority: Fife<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00182\' target=\'_blank\'>Historic Scotland</a>', [-3.36616335, 56.05385794])">Fordell Castle</button>
+
+<button onclick="showPopup('Fyvie Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00184\' target=\'_blank\'>Historic Scotland</a>', [-2.3926338, 57.44323336])">Fyvie Castle</button>
+
+<button onclick="showPopup('Glamis Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00189\' target=\'_blank\'>Historic Scotland</a>', [-3.00059397, 56.62172728])">Glamis Castle</button>
+<button onclick="showPopup('Glenborrodale Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00195\' target=\'_blank\'>Historic Scotland</a>', [-5.91068453, 56.67841471])">Glenborrodale Castle</button>
+
+<button onclick="showPopup('Gordon Castle (Bog of Gight)', 'Authority: Moray<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00198\' target=\'_blank\'>Historic Scotland</a>', [-3.072372, 57.62744677])">Gordon Castle (Bog of Gight)</button>
+
+<button onclick="showPopup('Grantully Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00202\' target=\'_blank\'>Historic Scotland</a>', [-3.80947105, 56.64013384])">Grantully Castle</button>
+
+<button onclick="showPopup('Guthrie Castle', 'Authority: Angus<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00205\' target=\'_blank\'>Historic Scotland</a>', [-2.71516796, 56.64411697])">Guthrie Castle</button>
+
+<button onclick="showPopup('Hatton Castle', 'Authority: Aberdeenshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00399\' target=\'_blank\'>Historic Scotland</a>', [-2.40852072, 57.51030936])">Hatton Castle</button>
+
+<button onclick="showPopup('Inveraray Castle', 'Authority: Argyll and Bute<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00223\' target=\'_blank\'>Historic Scotland</a>', [-5.06686913, 56.24819087])">Inveraray Castle</button>
+
+<button onclick="showPopup('Keillour Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00230\' target=\'_blank\'>Historic Scotland</a>', [-3.66041119, 56.41166998])">Keillour Castle</button>
+
+<button onclick="showPopup('Kelburn Castle', 'Authority: North Ayrshire<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00233\' target=\'_blank\'>Historic Scotland</a>', [-4.84200983, 55.77203895])">Kelburn Castle</button>
+
+<button onclick="showPopup('Kellie Castle', 'Authority: Fife<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00234\' target=\'_blank\'>Historic Scotland</a>', [-2.77554574, 56.23743191])">Kellie Castle</button>
+
+<button onclick="showPopup('Melville Castle', 'Authority: Midlothian<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00282\' target=\'_blank\'>Historic Scotland</a>', [-3.10219662, 55.889709])">Melville Castle</button>
+
+<button onclick="showPopup('Methven Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00285\' target=\'_blank\'>Historic Scotland</a>', [-3.54105576, 56.41688247])">Methven Castle</button>
+
+<button onclick="showPopup('Monzie Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00290\' target=\'_blank\'>Historic Scotland</a>', [-3.82678563, 56.39974021])">Monzie Castle</button>
+
+<button onclick="showPopup('Murthly Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00292\' target=\'_blank\'>Historic Scotland</a>', [-3.51610198, 56.53374349])">Murthly Castle</button>
+
+<button onclick="showPopup('Oxenfoord Castle', 'Authority: Midlothian<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00307\' target=\'_blank\'>Historic Scotland</a>', [-2.98121062, 55.88035816])">Oxenfoord Castle</button>
+
+<button onclick="showPopup('Skibo Castle', 'Authority: Highland<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00343\' target=\'_blank\'>Historic Scotland</a>', [-4.12929208, 57.86839193])">Skibo Castle</button>
+<button onclick="showPopup('Stobo Castle', 'Authority: Scottish Borders<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00349\' target=\'_blank\'>Historic Scotland</a>', [-3.32791149, 55.61299576])">Stobo Castle</button>
+
+<button onclick="showPopup('Stonefield Castle Hotel', 'Authority: Argyll and Bute<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00350\' target=\'_blank\'>Historic Scotland</a>', [-5.41576395, 55.88910348])">Stonefield Castle Hotel</button>
+
+<button onclick="showPopup('Taymouth Castle', 'Authority: Perth and Kinross<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00354\' target=\'_blank\'>Historic Scotland</a>', [-3.98394485, 56.59479031])">Taymouth Castle</button>
+
+<button onclick="showPopup('Thirlestane Castle', 'Authority: Scottish Borders<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00371\' target=\'_blank\'>Historic Scotland</a>', [-2.74467508, 55.72837535])">Thirlestane Castle</button>
+
+<button onclick="showPopup('Torosay Castle (Duart House)', 'Authority: Argyll and Bute<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00376\' target=\'_blank\'>Historic Scotland</a>', [-5.713456, 56.477485])">Torosay Castle (Duart House)</button>
+<button onclick="showPopup('University of Stirling (Airthrey Castle)', 'Authority: Stirling<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00010\' target=\'_blank\'>Historic Scotland</a>', [-3.91739148, 56.14686029])">University of Stirling (Airthrey Castle)</button>
+<button onclick="showPopup('Wemyss Castle', 'Authority: Fife<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00384\' target=\'_blank\'>Historic Scotland</a>', [-3.09187745, 56.14473051])">Wemyss Castle</button>
+<button onclick="showPopup('Winton Castle', 'Authority: East Lothian<br>Link: <a href=\'https://portal.historicenvironment.scot/designation/GDL00387\' target=\'_blank\'>Historic Scotland</a>', [-2.90508859, 55.91667167])">Winton Castle</button>
+        </ul>
+    </div>
+   </div>      
+
+    <div id="map"></div> <!-- Mapbox Map -->
+  
+
+  <script src="script.js"></script>
+<script>
+
+        function showPopup(title, description, coords) {
+            new mapboxgl.Popup()
+                .setLngLat(coords)
+                .setHTML(`<h3>${title}</h3><p>${description}</p>`)
+                .addTo(map);
+            map.flyTo({ center: coords, zoom: 10 });
+        }
+  
+    function showPopup(title, description, coords) {
+    new mapboxgl.Popup({ 
+        closeButton: true,  // Ensures the "X" button is visible
+        closeOnClick: true  // Allows closing the popup by clicking outside
+    })
+    .setLngLat(coords)
+    .setHTML(`
+        <div style="position: relative;">
+            <h3>${title}</h3>
+            <p>${description}</p>
+        </div>
+    `)
+    .addTo(map);
+
+    map.flyTo({ center: coords, zoom: 10 });
+}
+
+function openTab(evt, tabName) {
+    let i, tabcontent, tabbtns;
+    
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tabbtns = document.getElementsByClassName("tab-btn");
+    for (i = 0; i < tabbtns.length; i++) {
+        tabbtns[i].classList.remove("active");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
